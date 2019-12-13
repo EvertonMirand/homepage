@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-  background-color: rgb(50, 98, 244);
+  background: linear-gradient(90deg, rgb(50, 98, 244), rgb(80, 110, 230));
   display: flex;
   height: 100px;
   align-items: center;

@@ -8,7 +8,7 @@ import FloatingButton from '../FloatingButton';
 
 const links = [
   {
-    title: 'Home',
+    title: 'Conteudo',
   },
   {
     title: 'Features',
