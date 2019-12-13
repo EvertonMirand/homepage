@@ -4,7 +4,7 @@ import { Container } from './styles';
 
 export default function EntrepriseLogo({ name, Logo }) {
   return (
-    <Container>
+    <Container to="/">
       <Logo />
       <span>{name}</span>
     </Container>
