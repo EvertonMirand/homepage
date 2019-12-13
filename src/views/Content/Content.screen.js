@@ -2,9 +2,9 @@ import React from 'react';
 
 import Lottie from 'react-lottie';
 import { Container, Left, Right } from './styles';
-import animationData from '../../assets/lottie/car.json';
+import animation from '../../assets/lottie/car.json';
 
-export default function Content() {
+export default function Content({ animationData = animation }) {
   const defaultOptions = {
     autoplay: true,
     loop: true,
