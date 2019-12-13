@@ -11,6 +11,9 @@ export const Container = styled(Link)`
   border-radius: 10px;
   padding: 20px;
   box-shadow: 1px 1px 1px rgba(15, 40, 90, 0.8);
+  span {
+    color: #fff;
+  }
 
   img {
     display: flex;
