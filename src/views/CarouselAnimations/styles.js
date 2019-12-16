@@ -25,5 +25,8 @@ export const Carousel = styled(Slider)`
     justify-content: center;
     height: 100%;
     width: 100%;
+    background: #eee;
+    border-radius: 20px;
+    box-shadow: 1px 1px 1px #eeeeda;
   }
 `;

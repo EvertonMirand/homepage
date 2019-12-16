@@ -31,4 +31,13 @@ export const Left = styled.div`
 export const Right = styled.div`
   display: flex;
   flex: 1;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+
+  div {
+    display: flex;
+    height: 100%;
+    width: 80%;
+  }
 `;

@@ -4,12 +4,11 @@ import Lottie from 'react-lottie';
 
 import { Container, Carousel } from './styles';
 
-import car from '../../assets/lottie/car.json';
-import radar from '../../assets/lottie/radar.json';
-import states from '../../assets/lottie/states.json';
-import swordsshield from '../../assets/lottie/swordsshield.json';
-
-export default function CarouselAnimations() {
+export default function CarouselAnimations({
+  onChange,
+  animations = [],
+  forwardRef,
+}) {
   const settings = {
     dots: true,
     infinite: true,
@@ -18,24 +17,17 @@ export default function CarouselAnimations() {
     slidesToScroll: 1,
   };
 
-  const animations = [car, radar, states, swordsshield];
-
   return (
-    <Container>
-      <Carousel
-        {...settings}
-        afterChange={index => {
-          console.log(index);
-        }}
-      >
-        {animations.map(animation => {
+    <Container ref={forwardRef}>
+      <Carousel {...settings} afterChange={onChange}>
+        {animations.map((animation, index) => {
           const defaultOptions = {
             autoplay: true,
-            loop: false,
+            loop: true,
             animationData: animation,
           };
           return (
-            <div>
+            <div key={String(index)}>
               <Lottie options={defaultOptions} />
             </div>
           );

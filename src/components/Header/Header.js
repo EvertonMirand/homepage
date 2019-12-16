@@ -6,25 +6,17 @@ import EntrepriseLogo from '../EntrepriseLogo/EntrepriseLogo';
 import PhoneWithIcons from '../PhoneWithIcons/PhoneWithIcons';
 import FloatingButton from '../FloatingButton';
 
-const links = [
-  {
-    title: 'Conteudo',
-  },
-  {
-    title: 'Features',
-  },
-  {
-    title: 'Integration',
-  },
-  {
-    title: 'Testimonial',
-  },
-  {
-    title: 'Contact',
-  },
-];
+export default function Header({ links = [] }) {
+  const onClickLink = link => {
+    const { ref } = link;
+    if (ref) {
+      window.scrollTo({
+        top: link.ref.current.offsetTop,
+        behavior: 'smooth',
+      });
+    }
+  };
 
-export default function Header() {
   return (
     <Container>
       <left>
@@ -37,7 +29,11 @@ export default function Header() {
       <right>
         <div>
           {links.map(link => (
-            <button type="button" key={link.title} onClick={() => {}}>
+            <button
+              type="button"
+              key={link.title}
+              onClick={() => onClickLink(link)}
+            >
               {link.title}
             </button>
           ))}

@@ -4,7 +4,7 @@ import Lottie from 'react-lottie';
 import { Container, Left, Right } from './styles';
 import animation from '../../assets/lottie/car.json';
 
-export default function Content({ animationData = animation }) {
+export default function Content({ animationData = animation, forwardRef }) {
   const defaultOptions = {
     autoplay: true,
     loop: true,
@@ -15,7 +15,7 @@ export default function Content({ animationData = animation }) {
   };
 
   return (
-    <Container>
+    <Container ref={forwardRef}>
       <Left>
         <span>
           O ocio me fez fazer esse site, e aprovetei para me aperfeicoar no
@@ -23,7 +23,9 @@ export default function Content({ animationData = animation }) {
         </span>
       </Left>
       <Right>
-        <Lottie options={defaultOptions} />
+        <div>
+          <Lottie options={defaultOptions} />
+        </div>
       </Right>
     </Container>
   );
