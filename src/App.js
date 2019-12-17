@@ -12,17 +12,9 @@ import history from './services/history';
 import Header from './components/Header/Header';
 import GlobalStyle from './styles/global';
 import Content from './views/Content/Content.screen';
-import CarouselAnimations from './views/CarouselAnimations/CarouselAnimations.screen';
+import CarouselImages from './views/CarouselImage/CarouselImages.screen';
 
-import car from './assets/lottie/car.json';
-
-import radar from './assets/lottie/radar.json';
-
-import states from './assets/lottie/states.json';
-import swordsshield from './assets/lottie/swordsshield.json';
 import { store, persistor } from './store';
-
-const animations = [car, radar, states, swordsshield];
 
 export default function App() {
   const contentRef = useRef();
@@ -34,7 +26,7 @@ export default function App() {
       ref: contentRef,
     },
     {
-      title: 'Animações',
+      title: 'Imagens',
       ref: carouselRef,
     },
     {
@@ -55,10 +47,7 @@ export default function App() {
           <Header links={links} />
           <GlobalStyle />
           <Content forwardRef={contentRef} />
-          <CarouselAnimations
-            forwardRef={carouselRef}
-            animations={animations}
-          />
+          <CarouselImages forwardRef={carouselRef} />
         </Router>
       </PersistGate>
     </Provider>

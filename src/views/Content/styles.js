@@ -39,5 +39,12 @@ export const Right = styled.div`
     display: flex;
     height: 100%;
     width: 80%;
+    align-content: center;
+    justify-content: center;
+
+    img {
+      display: flex;
+      height: 80%;
+    }
   }
 `;

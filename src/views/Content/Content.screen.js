@@ -1,16 +1,10 @@
 import React from 'react';
 
-import Lottie from 'react-lottie';
 import { useSelector } from 'react-redux';
 import { Container, Left, Right } from './styles';
 
 export default function Content({ forwardRef }) {
-  const animationData = useSelector(state => state.animation.selectedAnimation);
-  const defaultOptions = {
-    autoplay: true,
-    loop: true,
-    animationData,
-  };
+  const image = useSelector(state => state.image.selectedImage);
 
   return (
     <Container ref={forwardRef}>
@@ -22,7 +16,7 @@ export default function Content({ forwardRef }) {
       </Left>
       <Right>
         <div>
-          <Lottie options={defaultOptions} />
+          <img src={image} alt="Imagem" />
         </div>
       </Right>
     </Container>

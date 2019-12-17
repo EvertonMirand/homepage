@@ -1,6 +1,6 @@
 import { combineReducers } from 'redux';
-import animation from './animations/reducer';
+import image from './images/reducer';
 
 export default combineReducers({
-  animation,
+  image,
 });

@@ -23,10 +23,18 @@ export const Carousel = styled(Slider)`
   div {
     display: flex;
     justify-content: center;
+    align-content: center;
+    align-items: center;
+    justify-items: center;
     height: 100%;
     width: 100%;
     background: #eee;
     border-radius: 20px;
     box-shadow: 1px 1px 1px #eeeeda;
+
+    img {
+      display: flex;
+      height: 80%;
+    }
   }
 `;

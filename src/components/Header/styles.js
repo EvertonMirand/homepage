@@ -10,40 +10,40 @@ export const Container = styled.div`
   overflow: scroll;
   padding-right: 30px;
   padding-left: 30px;
+`;
 
-  left {
-    display: flex;
-    flex-direction: row;
+export const Left = styled.div`
+  display: flex;
+  flex-direction: row;
 
-    a {
-      margin-right: 30px;
-    }
+  a {
+    margin-right: 30px;
+  }
+`;
+
+export const Right = styled.div`
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  button {
+    cursor: pointer;
+    color: #fff;
+    font-weight: bold;
+    font-size: 14px;
   }
 
-  right {
+  div {
     display: flex;
     flex-direction: row;
-    align-items: center;
+    height: 70%;
 
     button {
-      cursor: pointer;
-      color: #fff;
-      font-weight: bold;
-      font-size: 14px;
-    }
+      border: none;
+      background: none;
 
-    div {
-      display: flex;
-      flex-direction: row;
-      height: 70%;
-
-      button {
-        border: none;
-        background: none;
-
-        margin: 10px;
-        justify-content: center;
-      }
+      margin: 10px;
+      justify-content: center;
     }
   }
 `;

@@ -6,7 +6,7 @@ export default reducers => {
     {
       key: 'Homepage',
       storage,
-      whitelist: ['animation'],
+      whitelist: ['image'],
     },
     reducers
   );

@@ -1,7 +1,7 @@
 import React from 'react';
 import { MdSentimentVerySatisfied } from 'react-icons/md';
 
-import { Container } from './styles';
+import { Container, Right, Left } from './styles';
 import EntrepriseLogo from '../EntrepriseLogo/EntrepriseLogo';
 import PhoneWithIcons from '../PhoneWithIcons/PhoneWithIcons';
 import FloatingButton from '../FloatingButton';
@@ -20,14 +20,14 @@ export default function Header({ links = [] }) {
 
   return (
     <Container>
-      <left>
+      <Left>
         <EntrepriseLogo
           name="Everton Miranda Vitório"
           Logo={() => <MdSentimentVerySatisfied color="#f908" size={35} />}
         />
         <PhoneWithIcons number="+55 61 98127-3203" />
-      </left>
-      <right>
+      </Left>
+      <Right>
         <div>
           {links.map(link => (
             <button
@@ -43,7 +43,7 @@ export default function Header({ links = [] }) {
         <FloatingButton type="button" onClick={() => {}}>
           Sign Up
         </FloatingButton>
-      </right>
+      </Right>
     </Container>
   );
 }
