@@ -9,9 +9,10 @@ import FloatingButton from '../FloatingButton';
 export default function Header({ links = [] }) {
   const onClickLink = link => {
     const { ref } = link;
+
     if (ref) {
       window.scrollTo({
-        top: link.ref.current.offsetTop,
+        top: ref.current.offsetTop,
         behavior: 'smooth',
       });
     }
