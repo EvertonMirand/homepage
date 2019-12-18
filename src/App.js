@@ -15,10 +15,12 @@ import Content from './views/Content/Content.screen';
 import CarouselImages from './views/CarouselImage/CarouselImages.screen';
 
 import { store, persistor } from './store';
+import Graphics from './views/Graphics/Graphics.screen';
 
 export default function App() {
   const contentRef = useRef();
   const carouselRef = useRef();
+  const chartRef = useRef();
 
   const links = [
     {
@@ -30,7 +32,8 @@ export default function App() {
       ref: carouselRef,
     },
     {
-      title: 'Integration',
+      title: 'Graficos',
+      ref: chartRef,
     },
     {
       title: 'Testimonial',
@@ -48,6 +51,7 @@ export default function App() {
           <GlobalStyle />
           <Content forwardRef={contentRef} />
           <CarouselImages forwardRef={carouselRef} />
+          <Graphics forwardRef={chartRef} />
         </Router>
       </PersistGate>
     </Provider>

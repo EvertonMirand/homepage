@@ -1,7 +1,5 @@
 import produce from 'immer';
 
-import { FaReact, FaNodeJs, FaNode, FaPython, FaApple } from 'react-icons/fa';
-
 import { SELECT_IMAGE } from './types';
 
 const images = [

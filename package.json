@@ -5,6 +5,8 @@
   "dependencies": {
     "date-fns": "^2.4.1",
     "date-fns-tz": "^1.0.7",
+    "highcharts": "^8.0.0",
+    "highcharts-react-official": "^2.2.2",
     "history": "^4.10.1",
     "immer": "^4.0.2",
     "polished": "^3.4.1",
