@@ -9,7 +9,7 @@ export default function Jobs({ forwardRef }) {
   const jobs = useSelector(({ jobs: fetchedJobs }) => fetchedJobs.jobs);
   const dispatch = useDispatch();
   useEffect(() => {
-    dispatch(listJobsRequest('javascript', 1));
+    dispatch(listJobsRequest('react', 1));
   }, [dispatch]);
   const JobsCard = () =>
     jobs.map(job => (
