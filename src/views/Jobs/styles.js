@@ -1,17 +1,25 @@
 import styled from 'styled-components';
 
-export const Container = styled.div`
+export const Container = styled.ul`
   display: flex;
+  justify-content: center;
+  align-content: center;
   margin: 20px;
   overflow: scroll;
 `;
 
-export const Job = styled.div`
+export const JobGrid = styled.ul`
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 15px;
+`;
+
+export const Job = styled.li`
   display: flex;
   flex-direction: column;
   background-color: rgba(50, 90, 250, 1);
   height: 500px;
-  width: 400px;
+  width: 350px;
   padding: 20px;
   border-radius: 10px;
   overflow: scroll;
