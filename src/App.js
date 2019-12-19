@@ -43,9 +43,6 @@ export default function App() {
       title: 'Empregos',
       ref: jobsRef,
     },
-    {
-      title: 'Contact',
-    },
   ];
 
   return (

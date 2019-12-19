@@ -20,7 +20,7 @@ export default function Jobs({ forwardRef }) {
         <Company>
           <span>{job.company}</span>
           <LazyLoad>
-            <img src={job.company_logo} alt="Logo" />
+            <img src={job.company_logo} alt="" />
           </LazyLoad>
         </Company>
         <div>{ReactHtmlParser(job.description)}</div>

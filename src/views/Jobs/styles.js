@@ -29,7 +29,11 @@ export const JobGrid = styled.ul`
 export const Job = styled.li`
   display: flex;
   flex-direction: column;
-  background-color: rgba(50, 90, 250, 1);
+  background: linear-gradient(
+    160deg,
+    rgba(50, 90, 250, 1),
+    rgba(50, 90, 250, 0.6)
+  );
   height: 500px;
   width: 350px;
   padding: 20px;
