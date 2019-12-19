@@ -1,11 +1,23 @@
 import styled from 'styled-components';
+import Loader from 'react-loader-spinner';
 
 export const Container = styled.ul`
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-content: center;
+  align-items: center;
+
   margin: 20px;
   overflow: scroll;
+
+  input {
+    padding: 10px;
+    width: 50%;
+    margin-bottom: 10px;
+    border: none;
+    border-bottom: solid rgba(50, 90, 250, 1) 1px;
+  }
 `;
 
 export const JobGrid = styled.ul`
@@ -40,13 +52,33 @@ export const Company = styled.div`
   align-items: center;
 
   img {
+    display: flex;
     height: 100px;
     width: 100px;
     margin-left: 10px;
+    flex: 1;
   }
 
   span {
+    justify-content: center;
+    align-content: center;
+    display: flex;
     font-weight: bold;
     color: #fff;
+    flex: 1;
+    text-align: center;
   }
+`;
+
+export const Spinner = styled(Loader).attrs({
+  type: 'Oval',
+  color: 'rgba(50, 90, 250, 1)',
+  height: 25,
+  width: 25,
+})`
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
 `;

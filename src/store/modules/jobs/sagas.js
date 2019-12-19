@@ -11,6 +11,8 @@ export function* listJobs({ payload }) {
     const response = yield call(api.get, 'positions.json', {
       params: { search, page },
     });
+
+    console.tron.log(response);
     yield put(listJobsSuccess(response.data));
   } catch (err) {
     yield put(listJobsFailure());
