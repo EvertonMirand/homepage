@@ -29,16 +29,20 @@ export const JobGrid = styled.ul`
 export const Job = styled.li`
   display: flex;
   flex-direction: column;
-  background: #fff;
+  background: #09203f;
   height: 500px;
   width: 350px;
   padding: 20px;
   border-radius: 10px;
   overflow: scroll;
 
-  color: #000;
+  color: #fff;
 
-  box-shadow: 1px 1px 1px #fffffa;
+  box-shadow: 1px 1px 1px #09203f;
+
+  a {
+    color: #4fc3f7;
+  }
 
   div {
     margin-bottom: 5px;
@@ -66,7 +70,7 @@ export const Company = styled.div`
     align-content: center;
     display: flex;
     font-weight: bold;
-    color: #000;
+    color: #fff;
     flex: 1;
     text-align: center;
   }
@@ -74,7 +78,7 @@ export const Company = styled.div`
 
 export const Spinner = styled(Loader).attrs({
   type: 'Oval',
-  color: 'rgba(50, 90, 250, 1)',
+  color: '#fff',
   height: 25,
   width: 25,
 })`
