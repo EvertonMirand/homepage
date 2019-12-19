@@ -19,6 +19,7 @@ import CarouselImages from './views/CarouselImage/CarouselImages.screen';
 import { store, persistor } from './store';
 import Graphics from './views/Graphics/Graphics.screen';
 import Jobs from './views/Jobs/Jobs.screen';
+import Footer from './components/Footer/Footer';
 
 export default function App() {
   const contentRef = useRef();
@@ -55,6 +56,7 @@ export default function App() {
           <CarouselImages forwardRef={carouselRef} />
           <Graphics forwardRef={chartRef} />
           <Jobs forwardRef={jobsRef} />
+          <Footer />
         </Router>
       </PersistGate>
     </Provider>

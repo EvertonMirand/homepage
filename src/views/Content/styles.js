@@ -6,8 +6,7 @@ export const Container = styled.div`
   display: flex;
   flex-direction: column;
   overflow: scroll;
-  border-bottom-left-radius: 50px;
-  border-bottom-right-radius: 50px;
+  border-radius: 100% / 0 0 20% 20%;
   display: flex;
   flex-direction: row;
   padding: 30px;
