@@ -5,4 +5,4 @@
 `O projeto tem como intuito também no aprendizado na utilização do redux, redux-saga. 
 O projeto não usa state apenas o redux para amarzenar os estados.`
 
-![](https://github.com/EvertonMirand/homepage/blob/master/home-page.gif)
+![](https://github.com/EvertonMirand/homepage/blob/master/homepage.gif)
