@@ -6,15 +6,12 @@ export const Container = styled.div`
   align-items: center;
   justify-items: center;
   height: 700px;
+  flex-direction: column;
 `;
 
 export const ChartContainer = styled.div`
   display: flex;
-  background: linear-gradient(
-    150deg,
-    rgba(70, 160, 250, 1),
-    rgba(70, 190, 250, 1)
-  );
+  background: linear-gradient(90deg, #eee, #fff);
   width: 80%;
   height: 80%;
   justify-content: center;
@@ -30,19 +27,15 @@ export const ChartContainer = styled.div`
 
 export const ButtonsContainer = styled.div`
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   button {
     margin: 10px;
     border: none;
     border-radius: 5px;
     padding: 10px;
-    background: linear-gradient(
-      90deg,
-      rgba(70, 200, 250, 1),
-      rgba(70, 220, 250, 1)
-    );
+    background: linear-gradient(90deg, #eee, #fff);
     color: #222;
     font-weight: bold;
-    box-shadow: 1.2px 1.2px 2px rgba(70, 200, 250, 0.6);
+    box-shadow: 1.2px 1.2px 2px #fff;
   }
 `;

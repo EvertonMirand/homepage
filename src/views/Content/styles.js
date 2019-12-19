@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
   height: 500px;
-  background: linear-gradient(90deg, rgb(50, 98, 244), rgb(80, 110, 230));
+  background: linear-gradient(90deg, #1e3c72, #2a5298);
   display: flex;
   flex-direction: column;
   overflow: scroll;

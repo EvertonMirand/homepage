@@ -358,7 +358,6 @@ export const combined = {
         style: {
           left: '50px',
           top: '18px',
-          color: 'white',
         },
       },
     ],
@@ -385,8 +384,6 @@ export const combined = {
       data: [3, 2.67, 3, 6.33, 3.33],
       marker: {
         lineWidth: 2,
-        lineColor: 'white',
-        fillColor: 'white',
       },
     },
     {

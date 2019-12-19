@@ -29,18 +29,16 @@ export const JobGrid = styled.ul`
 export const Job = styled.li`
   display: flex;
   flex-direction: column;
-  background: linear-gradient(
-    160deg,
-    rgba(50, 90, 250, 1),
-    rgba(50, 90, 250, 0.6)
-  );
+  background: #fff;
   height: 500px;
   width: 350px;
   padding: 20px;
   border-radius: 10px;
   overflow: scroll;
 
-  color: #fff;
+  color: #000;
+
+  box-shadow: 1px 1px 1px #fffffa;
 
   div {
     margin-bottom: 5px;
@@ -68,7 +66,7 @@ export const Company = styled.div`
     align-content: center;
     display: flex;
     font-weight: bold;
-    color: #fff;
+    color: #000;
     flex: 1;
     text-align: center;
   }

@@ -3,7 +3,7 @@ import React from 'react';
 import Highcharts from 'highcharts';
 import networkgraph from 'highcharts/modules/networkgraph';
 import HighchartsReact from 'highcharts-react-official';
-import { networkOption } from '~/store/modules/charts/chartOptions';
+import { networkOption } from './chartOptions';
 
 networkgraph(Highcharts);
 
