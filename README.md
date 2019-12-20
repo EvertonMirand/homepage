@@ -2,7 +2,17 @@
 
 ## Projeto criado apenas para me aprimorar no React.js.
  
-`O projeto tem como intuito também no aprendizado na utilização do redux, redux-saga. 
-O projeto não usa state apenas o redux para amarzenar os estados.`
+O projeto tem como intuito também no aprendizado na utilização do redux, redux-saga. 
+O projeto não usa state apenas o redux para amarzenar os estados.
 
-![](https://github.com/EvertonMirand/homepage/blob/master/home-page.gif)
+Foram utilizadas as seguintes tecnologias:
+ - React.js
+ - React Hooks
+ - Redux
+ - Redux-Saga
+ - styled-components
+ - react-slick
+ - react-loader-spinner
+ - highcharts
+
+![](https://github.com/EvertonMirand/homepage/blob/master/homepage.gif)
