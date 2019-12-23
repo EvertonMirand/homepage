@@ -14,5 +14,7 @@ Foram utilizadas as seguintes tecnologias:
  - react-slick
  - react-loader-spinner
  - highcharts
+ - @rocketseat/unform
+ - yup
 
 ![](https://github.com/EvertonMirand/homepage/blob/master/homepage.gif)
