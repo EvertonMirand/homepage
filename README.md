@@ -17,4 +17,4 @@ Foram utilizadas as seguintes tecnologias:
  - @rocketseat/unform
  - yup
 
-![](https://github.com/EvertonMirand/homepage/blob/master/homepage.gif)
+![](https://github.com/EvertonMirand/homepage/blob/master/home-page.gif)
