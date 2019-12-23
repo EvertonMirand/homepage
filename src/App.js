@@ -17,6 +17,7 @@ import { store, persistor } from './store';
 import Route from './routes/Route';
 import SignIn from './views/SignIn/SignIn.screen';
 import Homepage from './views/Homepage';
+import SignUp from './views/SignUp/SignUp.screen';
 
 export default function App() {
   return (
@@ -25,7 +26,8 @@ export default function App() {
         <Router history={history}>
           <GlobalStyle />
           <Route path="/" exact component={Homepage} />
-          <Route path="/register" component={SignIn} />
+          <Route path="/login" component={SignIn} />
+          <Route path="/register" component={SignUp} />
         </Router>
       </PersistGate>
     </Provider>
