@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { Link } from 'react-router-dom';
 
 export const Container = styled.div`
   background: linear-gradient(90deg, #1e3c72, #2a5298);
@@ -46,4 +47,21 @@ export const Right = styled.div`
       justify-content: center;
     }
   }
+`;
+
+export const SignIn = styled(Link)`
+  display: flex;
+  background-color: rgb(93, 195, 246);
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  align-content: center;
+
+  color: #fff;
+
+  width: 100px;
+  height: 50px;
+  margin-left: 30px;
+  border-radius: 10px;
+  box-shadow: 1px 1px 1px rgba(93, 195, 246, 0.3);
 `;

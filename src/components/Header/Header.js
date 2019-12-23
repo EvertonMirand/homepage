@@ -1,7 +1,8 @@
 import React from 'react';
 import { MdSentimentVerySatisfied } from 'react-icons/md';
 
-import { Container, Right, Left } from './styles';
+import { Link } from 'react-router-dom';
+import { Container, Right, Left, SignIn } from './styles';
 import EntrepriseLogo from '../EntrepriseLogo/EntrepriseLogo';
 import PhoneWithIcons from '../PhoneWithIcons/PhoneWithIcons';
 import FloatingButton from '../FloatingButton';
@@ -39,10 +40,7 @@ export default function Header({ links = [] }) {
             </button>
           ))}
         </div>
-
-        <FloatingButton type="button" onClick={() => {}}>
-          Sign Up
-        </FloatingButton>
+        <SignIn to="/register">Sign Up</SignIn>
       </Right>
     </Container>
   );

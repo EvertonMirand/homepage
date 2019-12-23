@@ -10,6 +10,7 @@ const FloatingButton = styled.button`
   margin-left: 30px;
   border-radius: 10px;
   box-shadow: 1px 1px 1px rgba(93, 195, 246, 0.3);
+  color: #fff;
 `;
 
 export default FloatingButton;
