@@ -18,4 +18,4 @@ Foram utilizadas as seguintes tecnologias:
  - yup
 
 ![](https://github.com/EvertonMirand/homepage/blob/master/homepage-1.gif)
-![](https://github.com/EvertonMirand/homepage/blob/master/homepage-1.gif)
+![](https://github.com/EvertonMirand/homepage/blob/master/homepage-2.gif)
