@@ -16,7 +16,7 @@ export default function ProfileHeaderContainer({ profile }) {
     <Container>
       <span>{profile.name}</span>
       <div>
-        <Link to="/">Meu perfil</Link>
+        <Link to="/profile">Meu perfil</Link>
         <button type="button" onClick={onClickSignOut}>
           Sair
         </button>

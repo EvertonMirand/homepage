@@ -5,12 +5,13 @@ const FloatingButton = styled.button`
   justify-content: center;
   align-items: center;
   border: none;
-  width: 100px;
+  min-width: 100px;
   height: 50px;
   margin-left: 30px;
   border-radius: 10px;
   box-shadow: 1px 1px 1px rgba(93, 195, 246, 0.3);
   color: #fff;
+  padding: 10px;
 `;
 
 export default FloatingButton;
