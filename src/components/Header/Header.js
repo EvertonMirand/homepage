@@ -1,11 +1,14 @@
 import React from 'react';
 import { MdSentimentVerySatisfied } from 'react-icons/md';
+import { useSelector } from 'react-redux';
 
 import { Container, Right, Left, SignIn } from './styles';
 import EntrepriseLogo from '../EntrepriseLogo/EntrepriseLogo';
 import PhoneWithIcons from '../PhoneWithIcons/PhoneWithIcons';
+import ProfileHeaderContainer from '../ProfileHeaderContainer/ProfileHeaderContainer';
 
 export default function Header({ links = [] }) {
+  const user = useSelector(({ user }) => user.profile);
   const onClickLink = link => {
     const { ref } = link;
 
@@ -38,7 +41,11 @@ export default function Header({ links = [] }) {
             </button>
           ))}
         </div>
-        <SignIn to="/login">Sign In</SignIn>
+        {user ? (
+          <ProfileHeaderContainer profile={user} />
+        ) : (
+          <SignIn to="/login">Sign In</SignIn>
+        )}
       </Right>
     </Container>
   );
