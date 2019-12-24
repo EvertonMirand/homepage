@@ -1,11 +1,13 @@
 import React from 'react';
 
+import { useDispatch } from 'react-redux';
 import { Form, Input } from '@rocketseat/unform';
 import * as Yup from 'yup';
 
 import { Link } from 'react-router-dom';
 import AuthLayout from '~/pages/_layouts/AuthLayout';
 import FloatingButton from '~/components/FloatingButton';
+import { signUpRequest } from '~/store/modules/auth/actions';
 
 const schema = Yup.object().shape({
   name: Yup.string().required('O nome é obrigatório'),
@@ -18,7 +20,11 @@ const schema = Yup.object().shape({
 });
 
 export default function SignUp() {
-  function handleSubmit() {}
+  const dispatch = useDispatch();
+
+  function handleSubmit({ name, email, password }) {
+    dispatch(signUpRequest(name, email, password));
+  }
 
   return (
     <AuthLayout>
@@ -27,7 +33,7 @@ export default function SignUp() {
           <Input name="name" placeholder="Seu nome" />
           <Input name="email" type="email" placeholder="Seu e-mail" />
           <Input name="password" type="password" placeholder="Sua senha" />
-          <FloatingButton type="submit">Logar</FloatingButton>
+          <FloatingButton type="submit">Cadastrar</FloatingButton>
           <Link to="/login">Já tenho login</Link>
         </Form>
       </>

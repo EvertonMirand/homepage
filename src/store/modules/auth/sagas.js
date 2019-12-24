@@ -11,7 +11,7 @@ import {
   signUpFailure,
   signUpSuccess,
 } from './actions';
-import { SIGN_IN_REQUEST, SIGN_OUT } from './types';
+import { SIGN_IN_REQUEST, SIGN_OUT, SIGN_UP_REQUEST } from './types';
 
 export function* signIn({ payload }) {
   try {
@@ -53,6 +53,7 @@ export function* signUp({ payload: { name, email, password } }) {
       email,
       password,
     });
+
     history.push('/login');
     yield put(signUpSuccess());
   } catch (err) {
@@ -65,5 +66,6 @@ export function* signUp({ payload: { name, email, password } }) {
 export default all([
   takeLatest(REHYDRATE, setToken),
   takeLatest(SIGN_IN_REQUEST, signIn),
+  takeLatest(SIGN_UP_REQUEST, signUp),
   takeLatest(SIGN_OUT, signOut),
 ]);

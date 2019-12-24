@@ -3,11 +3,13 @@ import styled from 'styled-components';
 export const Container = styled.body.attrs({ className: 'container' })`
   display: flex;
   flex-direction: column;
-  margin-left: 10px;
+  margin-left: 30px;
   background: none;
 
   span {
     color: #fff;
+    font-size: 17px;
+    font-weight: bold;
   }
 
   div {
@@ -15,12 +17,17 @@ export const Container = styled.body.attrs({ className: 'container' })`
     flex-direction: row;
     align-items: center;
 
+    a,
+    button {
+      font-size: 13px;
+    }
+
     a {
-      color: rgb(93, 195, 246);
+      color: #ccc;
     }
 
     button {
-      color: #ccc;
+      color: #ff867c;
     }
   }
 `;

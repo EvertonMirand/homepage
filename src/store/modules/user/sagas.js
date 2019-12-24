@@ -3,6 +3,7 @@ import { toast } from 'react-toastify';
 import { UPDATE_PROFILE_REQUEST } from './types';
 import { updateProfileFailure, updateProfileSuccess } from './actions';
 import { apiBackend as api } from '~/services/api';
+import { USER } from '~/constants/ApiCalls';
 
 export function* updateProfile({ payload }) {
   try {
@@ -14,7 +15,7 @@ export function* updateProfile({ payload }) {
       ...(rest.oldPassword ? rest : {}),
     };
 
-    const response = yield call(api.put, 'users', profile);
+    const response = yield call(api.put, USER, profile);
     toast.success('Perfil atualizado com sucesso!');
 
     yield put(updateProfileSuccess(response.data));
