@@ -1,7 +1,9 @@
 import axios from 'axios';
 
-const api = axios.create({
+export const apiJobs = axios.create({
   baseURL: 'https://jobs.github.com/',
 });
 
-export default api;
+export const apiBackend = axios.create({
+  baseURL: 'http://localhost:3333',
+});

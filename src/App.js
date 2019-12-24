@@ -1,10 +1,11 @@
-import React, { useRef } from 'react';
+import React from 'react';
 
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 
 import { Provider } from 'react-redux';
 import { PersistGate } from 'redux-persist/integration/react';
+import { ToastContainer } from 'react-toastify';
 
 import 'react-loader-spinner/dist/loader/css/react-spinner-loader.css';
 
@@ -14,10 +15,8 @@ import history from './services/history';
 import GlobalStyle from './styles/global';
 
 import { store, persistor } from './store';
-import Route from './routes/Route';
-import SignIn from './views/SignIn/SignIn.screen';
-import Homepage from './views/Homepage';
-import SignUp from './views/SignUp/SignUp.screen';
+
+import Routes from './routes';
 
 export default function App() {
   return (
@@ -25,9 +24,8 @@ export default function App() {
       <PersistGate persistor={persistor}>
         <Router history={history}>
           <GlobalStyle />
-          <Route path="/" exact component={Homepage} />
-          <Route path="/login" component={SignIn} />
-          <Route path="/register" component={SignUp} />
+          <ToastContainer autoClose={3000} />
+          <Routes />
         </Router>
       </PersistGate>
     </Provider>

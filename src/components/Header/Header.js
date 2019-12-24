@@ -38,7 +38,7 @@ export default function Header({ links = [] }) {
             </button>
           ))}
         </div>
-        <SignIn to="/login">Sign Up</SignIn>
+        <SignIn to="/login">Sign In</SignIn>
       </Right>
     </Container>
   );
