@@ -1,11 +1,14 @@
 import React from 'react';
 
+import { useDispatch, useSelector } from 'react-redux';
+
 import { Form, Input } from '@rocketseat/unform';
 import * as Yup from 'yup';
 
 import { Link } from 'react-router-dom';
 import AuthLayout from '~/pages/_layouts/AuthLayout';
 import FloatingButton from '~/components/FloatingButton';
+import { signInRequest } from '~/store/modules/auth/actions';
 
 const schema = Yup.object().shape({
   email: Yup.string()
@@ -15,7 +18,11 @@ const schema = Yup.object().shape({
 });
 
 export default function SignIn() {
-  function handleSubmit() {}
+  const dispatch = useDispatch();
+
+  function handleSubmit({ email, password }) {
+    dispatch(signInRequest(email, password));
+  }
 
   return (
     <AuthLayout>

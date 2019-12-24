@@ -6,7 +6,7 @@ export default reducers => {
     {
       key: 'Homepage',
       storage,
-      whitelist: ['image', 'jobs'],
+      whitelist: ['image', 'jobs', 'auth', 'user'],
     },
     reducers
   );

@@ -1,11 +1,16 @@
 import { takeLatest, call, put, all } from 'redux-saga/effects';
 import { toast } from 'react-toastify';
 import { apiBackend as api } from '~/services/api';
-import { SESSION } from '~/constants/ApiCalls';
+import { SESSION, USER } from '~/constants/ApiCalls';
 import { REHYDRATE } from '~/store/type';
 import history from '~/services/history';
-import { signInFailure, signInSuccess } from './actions';
-import { SIGN_IN_REQUEST } from './types';
+import {
+  signInFailure,
+  signInSuccess,
+  signUpFailure,
+  signUpSuccess,
+} from './actions';
+import { SIGN_IN_REQUEST, SIGN_OUT } from './types';
 
 export function* signIn({ payload }) {
   try {
@@ -36,7 +41,28 @@ export function setToken({ payload }) {
   }
 }
 
+export function signOut() {
+  history.push('/');
+}
+
+export function* signUp({ payload: { name, email, password } }) {
+  try {
+    yield call(api.post, USER, {
+      name,
+      email,
+      password,
+    });
+    history.push('/login');
+    yield put(signUpSuccess());
+  } catch (err) {
+    console.tron.log(err);
+    toast.error('Falha no cadastro, verifique seus dados!');
+    yield put(signUpFailure());
+  }
+}
+
 export default all([
   takeLatest(REHYDRATE, setToken),
   takeLatest(SIGN_IN_REQUEST, signIn),
+  takeLatest(SIGN_OUT, signOut),
 ]);
