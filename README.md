@@ -16,6 +16,8 @@ Foram utilizadas as seguintes tecnologias:
  - highcharts
  - @rocketseat/unform
  - yup
+<p align="center">
+  <img src="https://github.com/EvertonMirand/homepage/blob/master/homepage-1.gif">
+  <img src="https://github.com/EvertonMirand/homepage/blob/master/homepage-2.gif">
+</p>
 
-![](https://github.com/EvertonMirand/homepage/blob/master/homepage-1.gif)
-![](https://github.com/EvertonMirand/homepage/blob/master/homepage-2.gif)
