@@ -18,12 +18,20 @@ export const Container = styled.ul`
     border: none;
     border-bottom: solid rgba(50, 90, 250, 1) 1px;
   }
+
+  @media (max-width: 600px) {
+  }
 `;
 
 export const JobGrid = styled.ul`
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 15px;
+  justify-items: center;
+  align-items: center;
+  @media (max-width: 600px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
 `;
 
 export const Job = styled.li`
@@ -35,6 +43,11 @@ export const Job = styled.li`
   padding: 20px;
   border-radius: 10px;
   overflow: scroll;
+
+  @media (max-width: 600px) {
+    height: 400px;
+    width: 90%;
+  }
 
   color: #fff;
 
