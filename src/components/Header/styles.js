@@ -11,9 +11,28 @@ export const Container = styled.div`
   overflow: scroll;
   padding-right: 30px;
   padding-left: 30px;
+
+  @media (max-width: 600px) {
+    padding: 0 8px 0 8px;
+    .left {
+      display: none;
+    }
+    .right {
+      div {
+        button {
+          margin: 5px;
+        }
+      }
+    }
+
+    .sign-in {
+      width: 80px;
+      margin-left: 10px;
+    }
+  }
 `;
 
-export const Left = styled.div`
+export const Left = styled.div.attrs({ className: 'left' })`
   display: flex;
   flex-direction: row;
 
@@ -22,7 +41,7 @@ export const Left = styled.div`
   }
 `;
 
-export const Right = styled.div`
+export const Right = styled.div.attrs({ className: 'right' })`
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -49,7 +68,7 @@ export const Right = styled.div`
   }
 `;
 
-export const SignIn = styled(Link)`
+export const SignIn = styled(Link).attrs({ className: 'sign-in' })`
   display: flex;
   background-color: rgb(93, 195, 246);
   justify-content: center;
