@@ -13,7 +13,9 @@ export const Container = styled.div`
   padding-left: 30px;
 
   @media (max-width: 600px) {
+    /* 0: top 8: right 0: bottom 8: left */
     padding: 0 8px 0 8px;
+    font-size: 12px;
     .left {
       display: none;
     }
@@ -26,8 +28,9 @@ export const Container = styled.div`
     }
 
     .sign-in {
-      width: 80px;
+      width: 70px;
       margin-left: 10px;
+      height: 40px;
     }
   }
 `;
