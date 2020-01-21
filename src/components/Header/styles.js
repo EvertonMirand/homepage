@@ -15,6 +15,7 @@ export const Container = styled.div`
   @media (max-width: 600px) {
     /* 0: top 8: right 0: bottom 8: left */
     padding: 0 8px 0 8px;
+    justify-content: center;
     font-size: 12px;
     .left {
       display: none;
