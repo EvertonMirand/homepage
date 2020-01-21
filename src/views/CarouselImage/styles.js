@@ -11,7 +11,7 @@ export const Container = styled.div`
   align-items: center;
   width: 100%;
 
-  @media (max-width: 600px) {
+  @media (max-width: 768px) {
     .carousel {
       width: 80%;
       height: 80%;

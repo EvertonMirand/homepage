@@ -19,7 +19,7 @@ export const Container = styled.ul`
     border-bottom: solid rgba(50, 90, 250, 1) 1px;
   }
 
-  @media (max-width: 600px) {
+  @media (max-width: 768px) {
   }
 `;
 
@@ -29,7 +29,7 @@ export const JobGrid = styled.ul`
   grid-gap: 15px;
   justify-items: center;
   align-items: center;
-  @media (max-width: 600px) {
+  @media (max-width: 768px) {
     grid-template-columns: repeat(1, 1fr);
   }
 `;
@@ -44,7 +44,7 @@ export const Job = styled.li`
   border-radius: 10px;
   overflow: scroll;
 
-  @media (max-width: 600px) {
+  @media (max-width: 768px) {
     height: 400px;
     width: 90%;
   }

@@ -12,7 +12,7 @@ export const Container = styled.div`
   padding-right: 30px;
   padding-left: 30px;
 
-  @media (max-width: 600px) {
+  @media (max-width: 768px) {
     /* 0: top 8: right 0: bottom 8: left */
     padding: 0 8px 0 8px;
     justify-content: center;

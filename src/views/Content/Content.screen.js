@@ -10,8 +10,9 @@ export default function Content({ forwardRef }) {
     <Container ref={forwardRef}>
       <Left>
         <span>
-          O ocio me fez fazer esse site, e aprovetei para me aperfeicoar no
-          React.js.
+          Bacon ipsum dolor amet salami picanha turducken flank, chicken cow
+          turkey boudin pork chop hamburger frankfurter drumstick sausage beef
+          swine.
         </span>
       </Left>
       <Right>

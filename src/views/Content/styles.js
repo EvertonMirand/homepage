@@ -11,7 +11,7 @@ export const Container = styled.div`
   flex-direction: row;
   padding: 30px;
 
-  @media (max-width: 600px) {
+  @media (max-width: 768px) {
     display: flex;
     flex-direction: column;
     height: 500px;
@@ -20,6 +20,9 @@ export const Container = styled.div`
     justify-content: center;
     align-items: center;
     .left {
+      span {
+        font-size: 25px;
+      }
       padding: 0;
       flex: 2;
       width: 90%;
