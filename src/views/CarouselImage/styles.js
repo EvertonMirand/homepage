@@ -10,9 +10,24 @@ export const Container = styled.div`
   align-content: center;
   align-items: center;
   width: 100%;
+
+  @media (max-width: 600px) {
+    .carousel {
+      width: 80%;
+      height: 80%;
+
+      div {
+        flex: 1;
+
+        img {
+          width: 80%;
+        }
+      }
+    }
+  }
 `;
 
-export const Carousel = styled(Slider)`
+export const Carousel = styled(Slider).attrs({ className: 'carousel' })`
   display: flex;
   justify-content: center;
   align-content: center;
