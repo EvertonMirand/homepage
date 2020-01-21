@@ -4,19 +4,41 @@ export const Container = styled.div`
   height: 500px;
   background: linear-gradient(90deg, #1e3c72, #2a5298);
   display: flex;
-  flex-direction: column;
+
   overflow: scroll;
   border-radius: 100% / 0 0 20% 20%;
   display: flex;
   flex-direction: row;
   padding: 30px;
+
+  @media (max-width: 600px) {
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    padding: 10px;
+
+    justify-content: center;
+    align-items: center;
+    .left {
+      padding: 0;
+      flex: 2;
+      width: 90%;
+    }
+
+    .right {
+      flex: 1;
+      img {
+        height: 70%;
+        width: 70%;
+      }
+    }
+  }
 `;
 
-export const Left = styled.div`
+export const Left = styled.div.attrs({ className: 'left' })`
   display: flex;
   width: 50%;
   height: 100%;
-  width: 40%;
   padding: 10px;
 
   align-items: center;
@@ -28,23 +50,24 @@ export const Left = styled.div`
   }
 `;
 
-export const Right = styled.div`
+export const Right = styled.div.attrs({ className: 'right' })`
   display: flex;
-  width: 50%;
+  flex: 1;
   align-items: center;
   align-content: center;
   justify-content: center;
 
   div {
     display: flex;
-    height: 100%;
-    width: 80%;
+    height: 90%;
+    width: 90%;
     align-content: center;
     justify-content: center;
 
     img {
       display: flex;
-      height: 80%;
+      height: 100%;
+      width: 100%;
     }
   }
 `;
