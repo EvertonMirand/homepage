@@ -1,9 +1,11 @@
 import Highcharts from 'highcharts';
 
+const width = window.innerWidth * 0.7;
+
 export const networkOption = {
   chart: {
     type: 'networkgraph',
-    height: '90%',
+    width,
     backgroundColor: undefined,
   },
   title: {
@@ -159,7 +161,8 @@ export const networkOption = {
 export const spline = {
   chart: {
     type: 'spline',
-    height: '90%',
+
+    width,
     backgroundColor: undefined,
   },
   title: {
@@ -345,7 +348,8 @@ export const spline = {
 export const combined = {
   chart: {
     backgroundColor: undefined,
-    height: '90%',
+
+    width,
   },
   title: {
     text: 'Combination chart',

@@ -7,17 +7,26 @@ export const Container = styled.div`
   justify-items: center;
   height: 700px;
   flex-direction: column;
+
+  @media (max-width: 600px) {
+    align-items: center;
+    justify-content: center;
+
+    .chart-container {
+      height: 70%;
+    }
+  }
 `;
 
-export const ChartContainer = styled.div`
+export const ChartContainer = styled.div.attrs({
+  className: 'chart-container',
+})`
   display: flex;
   background: linear-gradient(90deg, #eee, #fff);
   width: 80%;
   height: 80%;
   justify-content: center;
-  align-content: center;
   align-items: center;
-  justify-items: center;
   border-radius: 30px;
 
   highcharts-background {
