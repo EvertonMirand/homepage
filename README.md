@@ -19,6 +19,11 @@ Foram utilizadas as seguintes tecnologias:
 <p align="center">
   <img src="https://github.com/EvertonMirand/homepage/blob/master/homepage-1.gif">
   <img src="https://github.com/EvertonMirand/homepage/blob/master/homepage-2.gif">
-  <img src="https://github.com/EvertonMirand/homepage/blob/master/homepage-mobile.gif" height=600 width=400 >
+  
+ 
 </p>
 
+Mobile Version:
+<p align="center">
+  <img src="https://github.com/EvertonMirand/homepage/blob/master/homepage-mobile.gif" height=600 width=400 >
+</p>
